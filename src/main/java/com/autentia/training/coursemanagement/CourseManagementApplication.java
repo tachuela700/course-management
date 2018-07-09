@@ -1,11 +1,11 @@
-package com.autentia.training.course_management;
+package com.autentia.training.coursemanagement;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.autentia.training.course_management.model.mappers")
+@MapperScan("com.autentia.training.coursemanagement.model.mappers")
 public class CourseManagementApplication {
 
 	public static void main(String[] args) {

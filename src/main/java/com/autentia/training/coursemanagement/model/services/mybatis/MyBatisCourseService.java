@@ -1,4 +1,4 @@
-package com.autentia.training.course_management.model.services.mybatis;
+package com.autentia.training.coursemanagement.model.services.mybatis;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import javax.persistence.EntityNotFoundException;
 
 import org.springframework.stereotype.Service;
 
-import com.autentia.training.course_management.model.entities.Course;
-import com.autentia.training.course_management.model.mappers.CourseMapper;
-import com.autentia.training.course_management.model.services.CourseService;
+import com.autentia.training.coursemanagement.model.entities.Course;
+import com.autentia.training.coursemanagement.model.mappers.CourseMapper;
+import com.autentia.training.coursemanagement.model.services.CourseService;
 
 /**
  * Implementación de MyBatis del servicio para la gestión de la entidad 'Course'

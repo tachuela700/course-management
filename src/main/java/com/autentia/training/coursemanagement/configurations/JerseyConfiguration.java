@@ -1,4 +1,4 @@
-package com.autentia.training.course_management.configurations;
+package com.autentia.training.coursemanagement.configurations;
 
 import javax.ws.rs.ApplicationPath;
 
@@ -7,8 +7,6 @@ import org.glassfish.jersey.logging.LoggingFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 //import org.glassfish.jersey.servlet.ServletProperties;
 import org.springframework.context.annotation.Configuration;
-
-import com.autentia.training.course_management.web.resources.CourseResource;
 
 //import com.autentia.courseManagement.web.filter.CORSResponseFilter;
 //import com.autentia.courseManagement.web.resource.CourseResource;
@@ -24,10 +22,10 @@ public class JerseyConfiguration extends ResourceConfig {
 	public JerseyConfiguration() {
 //		register(LevelResource.class);
 //		register(TeacherResource.class);
-		register(CourseResource.class);
+//		register(CourseResource.class);
 //		register(FileUploadResource.class);
 //		register(FileDownloadResource.class);
-//		packages("com.autentia.training.course_management.web.resources");
+		packages("com.autentia.training.coursemanagement.web.resources");
 
 
 //		register(CORSResponseFilter.class);

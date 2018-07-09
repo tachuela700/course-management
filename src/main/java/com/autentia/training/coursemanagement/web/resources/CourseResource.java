@@ -1,4 +1,4 @@
-package com.autentia.training.course_management.web.resources;
+package com.autentia.training.coursemanagement.web.resources;
 
 import javax.persistence.EntityNotFoundException;
 import javax.ws.rs.Consumes;
@@ -12,12 +12,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.apache.commons.lang3.SerializationUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import com.autentia.training.course_management.model.entities.Course;
-import com.autentia.training.course_management.model.services.CourseService;
+import com.autentia.training.coursemanagement.model.entities.Course;
+import com.autentia.training.coursemanagement.model.services.CourseService;
 
 /**
  * Servicio REST para la gestión de la entidad 'Course'
@@ -57,6 +58,8 @@ public class CourseResource {
 		Course course = null;
 		try {
 			course = courseService.findOne(id);
+			log.debug(course.toString());
+			log.debug(""+course.equals(SerializationUtils.clone(course)));
 		} catch (EntityNotFoundException e) {
 			log.error(e.getMessage());
 			return Response.status(404).build();

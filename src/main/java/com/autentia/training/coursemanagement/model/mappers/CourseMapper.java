@@ -1,4 +1,4 @@
-package com.autentia.training.course_management.model.mappers;
+package com.autentia.training.coursemanagement.model.mappers;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-import com.autentia.training.course_management.model.entities.Course;
+import com.autentia.training.coursemanagement.model.entities.Course;
 
 
 /**
