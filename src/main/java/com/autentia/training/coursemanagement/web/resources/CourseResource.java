@@ -1,6 +1,5 @@
 package com.autentia.training.coursemanagement.web.resources;
 
-import javax.persistence.EntityNotFoundException;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -18,6 +17,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.autentia.training.coursemanagement.model.entities.Course;
+import com.autentia.training.coursemanagement.model.exceptions.EntityNotFoundException;
 import com.autentia.training.coursemanagement.model.services.CourseService;
 
 /**

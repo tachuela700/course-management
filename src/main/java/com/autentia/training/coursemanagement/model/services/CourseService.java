@@ -2,9 +2,9 @@ package com.autentia.training.coursemanagement.model.services;
 
 import java.util.List;
 
-import javax.persistence.EntityNotFoundException;
 
 import com.autentia.training.coursemanagement.model.entities.Course;
+import com.autentia.training.coursemanagement.model.exceptions.EntityNotFoundException;
 
 public interface CourseService {
 

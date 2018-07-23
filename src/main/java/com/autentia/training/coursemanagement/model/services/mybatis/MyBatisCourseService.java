@@ -2,7 +2,7 @@ package com.autentia.training.coursemanagement.model.services.mybatis;
 
 import java.util.List;
 
-import javax.persistence.EntityNotFoundException;
+import com.autentia.training.coursemanagement.model.exceptions.EntityNotFoundException;
 
 import org.springframework.stereotype.Service;
 
